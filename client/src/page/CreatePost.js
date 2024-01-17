@@ -39,7 +39,7 @@ const CreatePost = () => {
         setForm({ ...form, photo: `data:image/jpeg;base64,${data.photo}` });
       } catch (err) {
         console.error(err);
-        alert(err.message || "An error occurred");
+        alert("Free Tier Limit is Exceeded for the openAI api key");
       } finally {
         setGeneratingImg(false);
       }
